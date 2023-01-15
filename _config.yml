@@ -1,0 +1,51 @@
+# Site settings
+course_name: Embedded System Design and Applications
+course_description: "This course provides students with advanced skills in embedded systems design, specifically in the context of biomedical applications. The course will cover the hardware and software building blocks of embedded systems, and advanced topics such as real-time systems, low-power design, and analog interfacing, with a focus on how these concepts can be applied in the biomedical field. The course will include lectures, laboratory work, and an individual project, where students will have the opportunity to apply their learning to real-world biomedical engineering problems."
+course_semester: 
+
+baseurl: "/bme6163" # the subpath of your site, e.g. /blog/
+url: "https://qiriro.com" # the base hostname & protocol for your site
+# schoolname: "University of Rwanda"
+# schoolurl: ""
+twitter_username: 
+
+address: |
+    Kizito NKURIKIYEYEZU, Ph.D.
+    http://qiriro.com/
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+google_analytics: UA-255547804
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+# dateformat: "%A, %B %-d, %Y"
+dateformat: "%c"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
