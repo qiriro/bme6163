@@ -6,6 +6,6 @@ pdf: /static_files/labs/lab1.pdf
 solutions: 
 due_event: 
     type: due
-    date: 2022-01-20T23:59:59+2:00
+    date: 2023-01-20T23:59:59+2:00
     description: 'Lab #1 due'
 ---
